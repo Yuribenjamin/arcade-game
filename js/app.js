@@ -37,7 +37,17 @@ class Player {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 // a handleInput() method.
-    handleInput() {
+    handleInput(moves) {
+        switch(moves) {
+            case 'up': this.update(this.y -= 85);
+            break;
+            case 'down': this.update(this.y += 85);
+            break;
+            case 'right': this.update(this.x += 100);
+            break;
+            case 'left': this.update(this.x -= 100);
+            break;
+        }
 
     }
 }
