@@ -1,6 +1,43 @@
-frontend-nanodegree-arcade-game
-===============================
+# Arcade Game Project
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Yuribenjamin/arcade-game/blob/master/LICENSE)
+Udacity's Google Developer Challenger Scholarship - Front End Web Development
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+```
+    [+] AUTOR:      Ibrahim Ragab
+    [+] EMAIL:      Abrahammoustafa@hotmail.co.uk
+    [+] Github:     https://github.com/Yuribenjamin
+    [+] twitter:    @AbrahamRagab
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+```
+## Summary
+
+Classic arcade game clone project 4 in Google Developer Scholarship
+passed on OOJS & Canvas.
+
+## How to Play ?
+
+simply use the arrow keys to reach the water, congrats you win!
+[Try it](https://yuribenjamin.github.io/arcade-game/).
+
+To play locally, clone or download and open html file in browser.
+
+## Dependencies
+
+The starter code is provided by Udacity for the Udacity FEND's students.
+
+## Project specifications
+
+Error Free :
+
+    Player can not move off screen
+    Vehicles cross the screen
+    Vehicle-player collisions happen logically (not too early or too late)
+    Vehicle-player collision resets the game
+    Something happens when player wins
+
+Object-Oriented Code :
+
+    Game objects (player and vehicles) are implemented using JavaScript object-oriented programming features.
+
+## Licence
+The contents of this repository are covered under the [MIT License](https://rem.mit-license.org/).
