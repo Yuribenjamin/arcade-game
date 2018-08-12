@@ -1,5 +1,6 @@
 # Arcade Game Project
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Yuribenjamin/arcade-game/blob/master/LICENSE)
+
 Udacity's Google Developer Challenger Scholarship - Front End Web Development
 
 ```
