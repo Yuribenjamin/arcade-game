@@ -8,7 +8,7 @@ class Enemy {
         this.sprite = 'images/enemy-bug.png';
         this.x = x;
         this.y = y;
-        this.speed  = speed;
+        this.speed  = Math.floor(Math.random()* 500);
 
     }
     // Update the enemy's position, required method for game
@@ -17,6 +17,10 @@ class Enemy {
         // You should multiply any movement by the dt parameter
         // which will ensure the game runs at the same speed for
         // all computers.
+        this.x += this.speed * dt;
+        if (this.x >= 510) {
+            this.x = -50;
+        }
     }
     // Draw the enemy on the screen, required method for game
     render() {
@@ -66,10 +70,10 @@ class Player {
 }
 
 // Now instantiate your objects.
-const enemyOne = new Enemy (0, 60, 0);
-const enemyTwo = new Enemy (0, 145, 0);
-const enemyThree = new Enemy (0, 227, 0);
-const enemyFour = new Enemy (0, 310, 0);
+const enemyOne = new Enemy (0, 60);
+const enemyTwo = new Enemy (0, 145);
+const enemyThree = new Enemy (0, 227);
+const enemyFour = new Enemy (0, 310);
 // Place all enemy objects in an array called allEnemies
 let allEnemies = [enemyOne, enemyTwo, enemyThree, enemyFour];
 // Place the player object in a variable called player
