@@ -24,7 +24,7 @@ class Enemy {
         if (player.x < this.x + 80 && player.x + 80 > this.x && player.y < this.y + 60 && 60 + player.y > this.y) {
             player.x = 202;
             player.y = 405;
-            window.location.reload(true);
+            restart();
         };
     }
     // Draw the enemy on the screen, required method for game
@@ -51,8 +51,11 @@ class Player {
         } else if (this.y >= 400) {
             this.y = 400;
         } else if (this.y <= -20) {
-            this.y = -20
-;        }
+            this.x = 200;
+            this.y = 400;
+            gameWon();
+            
+        }
     }
 
     render() {
@@ -74,6 +77,29 @@ class Player {
     }
 }
 
+// Display Modal if player won!.
+function modal() {
+    const modal = document.getElementById('endGame');
+    modal.classList.add('appear');
+    
+}
+
+// Gamewon function handle winning process if play won!.
+function gameWon() {
+    modal();
+    const playAgain = document.querySelector('.button');
+    playAgain.addEventListener('click', function() {
+        restart();
+    const modal = document.getElementById('endGame');
+            modal.classList.remove('appear');
+            
+        }); 
+    
+}
+// reload game.
+function restart() {
+    location.reload();
+}
 // Now instantiate your objects.
 const enemyOne = new Enemy (0, 60);
 const enemyTwo = new Enemy (0, 145);
