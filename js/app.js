@@ -30,7 +30,15 @@ class Player {
     }
 // This class requires an update(), render() and
     update (x, y) {
-
+        if (this.x >= 405) {
+            this.x = 400;
+        } else if (this.x <= -1) {
+            this.x = 0;
+        } else if (this.y >= 400) {
+            this.y = 400;
+        } else if (this.y <= -20) {
+            this.y = -20
+;        }
     }
 
     render() {
@@ -56,7 +64,7 @@ class Player {
 // Place all enemy objects in an array called allEnemies
 let allEnemies = [];
 // Place the player object in a variable called player
-const player = new Player(202, 405);
+const player = new Player(200, 400);
 
 
 // This listens for key presses and sends the keys to your
