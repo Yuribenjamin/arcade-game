@@ -22,14 +22,31 @@ Enemy.prototype.render = function() {
 };
 
 // Now write your own player class
+class Player {
+    constructor(x,y) {
+        this.x = x;
+        this.y = y;
+        this.sprite = 'images/char-boy.png';
+    }
 // This class requires an update(), render() and
-// a handleInput() method.
+    update (x, y) {
 
+    }
+
+    render() {
+        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
+// a handleInput() method.
+    handleInput() {
+
+    }
+}
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
+let allEnemies = [];
 // Place the player object in a variable called player
-
+const player = new Player(202, 405);
 
 
 // This listens for key presses and sends the keys to your
